@@ -1,0 +1,11 @@
+pre-commit:
+  jobs:
+    - name: actionlint
+      run: actionlint
+      glob: ".github/workflows/*.{yaml,yml}"
+    - name: prettier
+      run: npx prettier --write .
+      glob: "*.{js,json,ts,yaml,yml}"
+    - name: eslint
+      run: npx eslint .
+      glob: "*.{js,ts}"

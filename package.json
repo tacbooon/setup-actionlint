@@ -1,0 +1,44 @@
+{
+  "name": "setup-actionlint",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Setup actionlint and add it to the PATH",
+  "keywords": [
+    "actions"
+  ],
+  "homepage": "https://github.com/tacbooon/setup-actionlint#readme",
+  "bugs": {
+    "url": "https://github.com/tacbooon/setup-actionlint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tacbooon/setup-actionlint.git"
+  },
+  "license": "MIT",
+  "author": "tacbooon",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "format": "prettier --write .",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/tool-cache": "^2.0.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^20.17.47",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "lefthook": "^1.11.13",
+    "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.13",
+    "rollup": "^4.40.2",
+    "typescript-eslint": "^8.32.1"
+  }
+}

@@ -1,0 +1,16 @@
+name: Setup actionlint
+description: Setup actionlint and add it to the PATH
+author: tacbooon
+inputs:
+  version:
+    description: \"latest\" or actionlint version like \"1.7.7\"
+    required: false
+    default: latest
+outputs:
+  cache-hit:
+    description: Whether the cache was hit
+  version:
+    description: Installed actionlint version like \"1.7.7\"
+runs:
+  using: node20
+  main: dist/index.js
